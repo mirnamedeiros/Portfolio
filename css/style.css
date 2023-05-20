@@ -632,25 +632,24 @@ body.offcanvas {
   .services .icon2 {
     display: block;
     margin-bottom: 20px; }
-    .services .icon2 i {
-      font-size: 30px;
-      color: #009361; }
+    .services .icon2 img {
+      font-size: 30px;}
   .services h3 {
     font-family: "Quicksand", Arial, sans-serif;
     font-size: 16px;
     font-weight: 500; }
   /* .services.color-2 {
     border-bottom: 2px solid #ec5453; } */
-    .services.color-2 .icon2 i {
-      color: #ec5453; }
+    /* .services.color-2 .icon2 i {
+      color: #ec5453; } */
   /* .services.color-3 {
     border-bottom: 2px solid #f9bf3f; } */
-    .services.color-3 .icon2 i {
-      color: #f9bf3f; }
+    /* .services.color-3 .icon2 i {
+      color: #f9bf3f; } */
   /* .services.color-4 {
     border-bottom: 2px solid #a84cb8; } */
-    .services.color-4 .icon2 i {
-      color: #a84cb8; }
+    /* .services.color-4 .icon2 i {
+      color: #a84cb8; } */
   /* .services.color-5 {
     border-bottom: 2px solid #2fa499; } */
   /* .services.color-6 {
@@ -672,39 +671,46 @@ body.offcanvas {
     height: 50px;
     display: table;
     margin: 0 auto;
-    background: #009361; }
+    /* background: #009361;  */
+  }
     .services .icon:before, .services .icon:after {
       position: absolute;
       left: 0;
       right: 0;
-      content: ''; }
+      content: ''; 
+    }
     .services .icon:before {
       top: -30px;
       width: 0;
       height: 0;
-      border-style: solid;
+      /* border-style: solid;
       border-width: 0 50px 30px 50px;
-      border-color: transparent transparent #009361 transparent; }
+      border-color: transparent transparent #009361 transparent;  */
+    }
     .services .icon:after {
       bottom: -30px;
       width: 0;
       height: 0;
-      border-style: solid;
+      /* border-style: solid;
       border-width: 30px 50px 0 50px;
-      border-color: #009361 transparent transparent transparent; }
-    .services .icon i {
+      border-color: #009361 transparent transparent transparent;  */
+    }
+    .services .icon img {
       font-size: 30px;
       color: #f5f0f0;
       z-index: 1;
       display: table-cell;
-      vertical-align: middle; }
+      vertical-align: middle;
+      width: 100px;
+      height: 100px;
+    }
   .services .desc {
-    margin-top: 60px; }
+    margin-top: 70px; }
     .services .desc h3 {
       font-size: 16px;
       font-weight: 700;
       text-transform: uppercase; }
-  .services.color-2 .icon {
+  /* .services.color-2 .icon {
     background: #ec5453; }
     .services.color-2 .icon:before {
       border-color: transparent transparent #ec5453 transparent; }
@@ -733,7 +739,7 @@ body.offcanvas {
     .services.color-6 .icon:before {
       border-color: transparent transparent #4054b2 transparent; }
     .services.color-6 .icon:after {
-      border-color: #4054b2 transparent transparent transparent; }
+      border-color: #4054b2 transparent transparent transparent; } */
 
 .progress-wrap h3 {
   font-size: 16px;
@@ -821,7 +827,7 @@ body.offcanvas {
   float: left;
   margin-bottom: 40px;
   position: relative; }
-  .colorlib-feature .colorlib-icon {
+  .colorlib-feature .colorlib-icon img {
     position: absolute;
     top: 0;
     left: 0;
