@@ -111,7 +111,6 @@ figure {
   #colorlib-aside #colorlib-logo {
     text-align: right;
     font-weight: 700;
-    font-size: 22px;
     margin-bottom: .5em;
     display: block;
     width: 100%; }
@@ -136,7 +135,6 @@ figure {
         margin: 0 0 10px 0;
         padding: 0;
         list-style: none;
-        font-size: 12px;
         font-weight: 500;
         text-transform: uppercase;
         letter-spacing: 1px; }
@@ -421,7 +419,7 @@ body.offcanvas {
 .heading-meta {
   margin-bottom: 15px;
   display: block;
-  font-size: 10px;
+  font-size: 1em;
   text-transform: uppercase;
   color: #f59a39;
   font-weight: 500;
