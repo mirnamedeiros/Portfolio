@@ -73,10 +73,12 @@ figure {
   position: relative; }
 
 #colorlib-aside {
-  padding-top: 3em;
-  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 3em 5em 3em 5em;
   float: left;
-  width: 300px;
+  min-width: 400px;
   position: fixed;
   overflow-y: hidden;
   z-index: 1001;
@@ -94,7 +96,7 @@ figure {
       transform: translateX(-300px);
       padding-top: 4em; } }
   #colorlib-aside .author-img {
-    width: 70%;
+    width: 100%;
     height: 230px;
     margin: 0 auto;
     margin-bottom: 30px;
@@ -214,12 +216,8 @@ figure {
             outline: none;
             color: #009361; }
 
-.container-wrap {
-  max-width: 1170px;
-  margin: 0 auto; }
-
 #colorlib-main {
-  width: calc(100% - 300px);
+  width: calc(100% - 400px);
   float: right;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
@@ -352,7 +350,7 @@ body.offcanvas {
     width: 300px;
     background: #f2f3f7;
     z-index: 999;
-    position: fixed; }
+    position: fixed;}
   body.offcanvas #colorlib-main, body.offcanvas .colorlib-nav-toggle {
     top: 0;
     -moz-transform: translateX(300px);
@@ -379,8 +377,7 @@ body.offcanvas {
 .colorlib-about,
 .colorlib-services,
 .colorlib-contact {
-  padding-top: 4em;
-  padding-bottom: 9em;
+  padding: 4em 5em 9em 5em;
   clear: both;
   width: 100%;
   display: block; }
@@ -944,7 +941,7 @@ body.offcanvas {
   background-repeat: no-repeat;
   position: relative;
   height: 250px;
-  width: 100%;
+  min-width: 100%;
   display: block;
   margin-bottom: 30px; }
   .project .desc {
@@ -983,6 +980,7 @@ body.offcanvas {
           font-size: 16px;
           color: #333333; }
     .project .desc h3 {
+      color: #f5f0f0;
       font-family: "Quicksand", Arial, sans-serif;
       font-size: 16px;
       font-weight: 500;
@@ -997,8 +995,6 @@ body.offcanvas {
       -webkit-transform: translate3d(0, -15px, 0);
       transform: translate3d(0, -15px, 0);
       margin-bottom: 15px; }
-      .project .desc h3 a {
-        color: #f5f0f0; }
     .project .desc span {
       display: block;
       color: rgba(255, 255, 255, 0.7);
@@ -1439,3 +1435,12 @@ body.offcanvas {
 
 .js .animate-box {
   opacity: 0; }
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.projects .animate-box{
+  min-width: 350px;
+}
