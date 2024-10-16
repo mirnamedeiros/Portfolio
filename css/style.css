@@ -75,6 +75,7 @@ figure {
 #colorlib-aside {
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   height: 100vh;
   padding: 3em 5em 3em 5em;
   float: left;
